@@ -1,5 +1,6 @@
 package com.example.bookstore
 
+import android.content.Context
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -40,6 +41,7 @@ fun LoginApplication(){
         composable("login_page", content = { LoginPage(navController = navController) })
         composable("register_page", content = { RegisterPage(navController = navController) })
         composable("reset_page", content = { ResetPage(navController = navController) })
+
     })
 }
 
